@@ -162,7 +162,7 @@
               </div>
         </section><br><br><br>
         <section style="padding: 0 7%;">
-            <h1 align="center">We Have Assoc. Professors(<span class="Aprofnum">0</span>)</h1><br><br>
+            <h1 align="center">We Have<br>Assoc. Professors(<span class="Aprofnum">0</span>)</h1><br><br>
             <div class="row row-cols-2 row-cols-lg-4 g-4" style="text-align: center;">
                 <div class="col">
                   <div class="card h-100 Aprof">
@@ -863,6 +863,23 @@
 
             let z = document.querySelectorAll(".Asprof").length;
             document.querySelector(".Asprofnum").textContent=z;
+            
+            window.addEventListener("scroll",reavel);
+
+            function reavel(){
+              var reavels = document.querySelector(".reavel"); 
+              var act = document.querySelector(".acting"); 
+              var winhei = window.innerHeight;
+              var revealpoint = 680;
+              reavelshei = reavels.getBoundingClientRect().bottom;
+              if(reavelshei< winhei-revealpoint)
+              {
+                act.classList.add("active");
+              }
+              else{
+                act.classList.remove("active");
+              }
+            }
         </script>
     </body>
 </html>
