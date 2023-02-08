@@ -71,8 +71,8 @@
               </div>
         <div class="row" style="margin-right: 0;">
             <div class="col-lg-6" style="margin-top: 15%;">
-                <div class="card mb-3 reveal" style="max-width: 20rem;margin:auto;background-color: #FAD3E7;">
-                    <div class="card-header" style="color: #E98EAD;font-size: 3rem;text-shadow: 2px 2px 5px #E98EAD;text-align: center;">Vision</div>
+                <div class="card mb-3 reveal" style="max-width: 20rem;margin:auto;background-color: #FAD3E7;" onmouseover="hovering()" onmouseout="nothover()">
+                    <div class="card-header" style="color: #E98EAD;font-size: 3rem;text-shadow: 2px 2px 5px #E98EAD;text-align: center;">Vision <i class="fa-solid fa-eye hii"></i></div>
                     <div class="card-body">
                       <h5 class="card-title" style="text-align: center;">Our Vision</h5>
                       <p class="card-text">To envision a diverse, stimulating, continually improving academic and research environment to fulfill the needs of the society and to mould students as socially responsible and competent professionals in the field of computer science and engineering.</p>
@@ -107,6 +107,18 @@
                 {
                     lis[i].classList.add("active");
                 }
+            }
+            function hovering(){
+                document.querySelector(".hii").classList.remove("fa-solid");
+                document.querySelector(".hii").classList.remove("fa-eye");
+                document.querySelector(".hii").classList.add("fa-solid");
+                document.querySelector(".hii").classList.add("fa-arrows-to-eye");
+            }
+            function nothover(){
+                document.querySelector(".hii").classList.remove("fa-solid");
+                document.querySelector(".hii").classList.remove("fa-arrows-to-eye");
+                document.querySelector(".hii").classList.add("fa-solid");
+                document.querySelector(".hii").classList.add("fa-eye");
             }
         </script>
     </body>
