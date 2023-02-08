@@ -43,9 +43,9 @@
     padding-top: 40%;
 }
 }
-@media screen and (max-width:580px){
+@media screen and (max-width:550px){
     .navmar{
-        margin-right: 160px;
+        margin-right: 140px;
     }
     .heading{
     padding-top: 45%;
