@@ -51,3 +51,11 @@
     padding-top: 45%;
 }
 }
+.bg-container{
+    background-color: #b7e5f3;
+    height: 287vh;
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
